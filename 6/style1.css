@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    padding: 4px;
+    
+}
+
+li {
+    align-self: center;
+    list-style: none;
+    display: inline;
+    padding: 0 43px;
+}
+ img{
+    /* inset: 10px; */
+    height: 40px;
+    width: 40px ;
+    /* display: inline; */
+}
+
+.c1 {
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 10vh;
+    align-items: center;    
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    height: 80vh;
+    width: 40vw;
+    background-color: aqua;
+}
+
+.right {
+    height: 80vh;
+    width: 40vw;
+    background-color: blueviolet;
+}

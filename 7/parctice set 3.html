@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice set 3</title>
+    <style>
+        *{
+            /* margin: 0; */
+            padding: 0;
+        }
+        body{
+            margin: 0;
+        }
+        header{
+            background-color: blanchedalmond;
+            color:crimson;
+            height: 10vh;
+        }
+      nav {
+        display: grid;
+        grid-template-columns: 30px auto;
+        align-content: center;
+      }
+      nav img {
+        margin: auto 10px;
+        height: 50px;
+        width: 50px;
+      }
+      .left {
+          margin: 0;
+        background-size: 100vw 45vh;
+        background-image: url(bg.jpg);
+        height: 45vh;
+        width: 99vw;
+        background-color: aqua;
+      }
+      .right{
+          margin: 0;
+          background-color: purple;
+          display: grid;
+          grid-template-columns: auto auto auto;
+          justify-content: space-evenly ;
+          height: 40vh;
+          align-content: center;
+      }
+      .I1 {
+        height: 200px;
+        width: 400px;
+      }
+      li {
+        list-style: none;
+        display: inline;
+        /* padding: 0 15px; */
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="c1">
+      <nav>
+          <div class="d1"></div>
+        <!-- <img src="logo-blue.png" alt="" /> -->
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="left"></div>
+      <div class="right">
+        <img class="I1" src="bg1.jpg" alt="" />
+        <img class="I1" src="bg1.jpg" alt="" />
+        <img class="I1" src="bg1.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

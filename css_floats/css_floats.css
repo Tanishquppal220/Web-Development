@@ -1,0 +1,21 @@
+*{
+    font-style:bold;}
+body{
+    font-family: 'Roboto Condensed', sans-serif;       
+ }
+.contanier {
+    width: 900px;
+    border: 3px solid purple;
+    margin: auto 33px;
+    color:darkred;
+}
+
+.items {
+    border: 2px solid gray;
+    margin: 12px 3px;
+    padding: 12px 3px;
+    background: burlywood;
+}
+para{
+    font-size: large;
+}

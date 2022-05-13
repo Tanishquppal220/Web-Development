@@ -1,0 +1,17 @@
+.bar1{
+    background-color: teal;
+}
+.bar1 ul{
+    overflow: auto;
+    padding: 4px 4px;
+    margin: 10px;
+}
+.bar1 li{
+    float: left;
+    list-style: none;  
+}
+.bar1 li a{
+    text-decoration: none;
+    color: rgb(210, 246, 7);
+    padding: 3px 3px;
+}

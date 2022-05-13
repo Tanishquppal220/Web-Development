@@ -1,0 +1,29 @@
+body{
+    background-color: lightcoral;
+    color:mintcream;
+    background-image: url(https://www.verdict.co.uk/wp-content/uploads/2017/09/giphy-downsized-large.gif);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 1000px;
+}
+.container{
+    color: navy;
+    height: 544px;
+    width: 100%;
+    border: 2px solid blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    
+    
+}
+.item{
+    flex-direction: row;
+    width: 200px;
+    height: 200px;
+    background:seagreen;
+    border: 2px solid red;
+    margin: 10px;
+    padding: 3px;
+}

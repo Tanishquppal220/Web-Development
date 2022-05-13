@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  /* display: flex; */
+  background-color: blanchedalmond;
+  padding: 23px;
+  /* justify-content:space-evenly; */
+}
+
+.box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  border: 4px solid red;
+  /* border-radius: 50%; */
+  animation-name: size;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate; */
+  /* animation-timing-function: ease-out; */
+}
+.box2 {
+    margin-top: 30px;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  border: 4px solid red;
+  border-radius: 50%;
+  animation-name: move;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate; */
+  /* animation-timing-function: ease-out; */
+}
+
+@keyframes size {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 1000px;
+  }
+}
+@keyframes move {
+  0% {
+    top: 0px;
+    left: 0px;
+    /* background-color: orange; */
+  }
+  25% {
+    top: 250px;
+    left: 0px;
+    background-color: cornflowerblue;
+  }
+  50% {
+    top: 250px;
+    left: 250px;
+    background-color: blueviolet;
+  }
+  75% {
+    top: 0;
+    left: 250px;
+    background-color: cadetblue;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    /* background-color: chocolate; */
+  }
+}

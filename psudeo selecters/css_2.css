@@ -1,0 +1,30 @@
+*{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-weight: bold;
+}
+.contanier{
+    border: 2px solid red;
+    background-color: rgb(223,245,201);
+    padding: 34px;
+    margin: 34px auto;
+    width: 666px;
+}
+a{
+    text-decoration: none;
+}
+/* a:visited{
+    color: yellow;
+} */
+.btn{
+    background: brown;
+    padding: 6px;
+    border: cyan solid 3px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 15px;
+    color: orange ;
+}
+.btn:hover{
+    color: palegreen;
+    background-color: rgb(164, 57, 57);
+}
