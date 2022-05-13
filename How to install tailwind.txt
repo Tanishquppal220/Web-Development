@@ -1,0 +1,6 @@
+npm init -y
+npm install -D tailwindcss postcss autoprefixer vite
+npx tailwindcss init -p
+Now Change TEST in package.json to start:"vite",
+in tailwindcss.config.js put vlue of content to ["*"]
+To build production bunble add another script "build":"vite build"
