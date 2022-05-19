@@ -5,18 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Date object</title>
+    <style>
+        .container {
+            font-size: 23px;
+            background-color: blanchedalmond;
+            border: 2px solid gray;
+            padding: 34px;
+            margin: 4px;
+            text-align: center;
+        }
+        .bold{
+            font-weight: bolder;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-       Current time is <span id="time"></span>
+       <span class="bold">Current time is:</span> <span id="clock"></span>
     </div>
 </body>
 <script>
+    setInterval(updatetime, 1000);
    function updatetime() {
-       let time= document.getElementById("time")
-       time.innerHTML = new Date().
-       console.log(time)
+       let newdate= new Date();
+       clock.innerHTML = newdate
    }
-   setInterval(updatetime, 1000);
 </script>
 </html>
