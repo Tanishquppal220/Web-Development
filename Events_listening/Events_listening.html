@@ -57,7 +57,10 @@
 <script>
     let para = document.getElementById('para');
     para.addEventListener('mouseover', function run() {
-        prompt('Confirm password');
+        console.log('Inside para');
+    });
+    para.addEventListener('mouseout', function run() {
+        console.log('Outside para');
     });
     function hide() {
         let para = document.getElementById('para');
