@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events_listening</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat porro tenetur blanditiis
+            recusandae omnis, modi fuga a velit illo corporis ipsa dolore exercitationem saepe deserunt cum voluptate
+            cupiditate deleniti suscipit, soluta, atque similique possimus? Assumenda corporis odio, fuga aperiam id et
+            iure amet est sequi obcaecati nostrum repellat nobis deserunt voluptas nihil suscipit vel iste provident
+            cumque explicabo ipsam? Delectus sunt facere pariatur soluta, reprehenderit voluptatem? Maiores accusamus
+            enim dolor nostrum porro ratione voluptates ab culpa iste voluptatibus veniam minus inventore sit libero,
+            aperiam reprehenderit ea eligendi nemo impedit sapiente autem. Maxime fuga obcaecati doloribus incidunt
+            error dicta suscipit rem asperiores dolor excepturi reiciendis labore hic fugiat, inventore cum repellendus
+            animi corporis distinctio velit consectetur blanditiis omnis quibusdam quisquam tenetur? Cupiditate ab,
+            tempore officiis in necessitatibus consequuntur, error voluptatem totam animi accusantium nihil accusamus
+            eveniet maxime rerum facilis reprehenderit excepturi assumenda molestias impedit id aliquid, itaque quasi
+            voluptas. Vero, nisi cupiditate. Necessitatibus exercitationem, voluptates tempore in sunt voluptatum sit
+            eum ipsam perferendis. Accusamus natus inventore harum iusto consequuntur voluptas voluptate, voluptates
+            aliquam sed id rerum nobis aliquid repellat commodi, illum officiis corrupti quis eveniet maxime, saepe
+            quam? Pariatur, magnam sunt, sit debitis rerum dolore atque officia molestiae eius eaque illo.</p>
+    </div>
+    <button id="btn" onclick="hide()"><span>
+            Show more
+        </span></button>
+
+</body>
+<style>
+    body {
+        height: 100vh;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+    }
+
+    #btn {
+        /* margin: auto; */
+        width: 100px;
+        padding: 10px;
+        border-radius: 2px;
+        border: 0px;
+        background-color: #007bff;
+        color: white;
+    }
+
+    #para {
+        display: none;
+    }
+</style>
+<script>
+    let para = document.getElementById('para');
+    para.addEventListener('mouseover', function run() {
+        prompt('Confirm password');
+    });
+    function hide() {
+        let para = document.getElementById('para');
+            let btn = document.getElementById('btn');
+            let span = document.querySelector('span');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+                span.innerHTML = 'Show more';
+            }
+            else {
+                para.style.display = 'block';
+                span.innerHTML = 'Show less';
+            }
+        }
+
+</script>
+
+</html>
