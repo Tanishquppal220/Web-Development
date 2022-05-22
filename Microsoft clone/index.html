@@ -12,12 +12,30 @@
 
 <body class="m-0 p-0">
     <header class="navbar flex justify-between items-center h-[6vh] md:px-1 lg:mx-16 px-4 lg:m-3">
+        <div id="features"
+            class="features flex flex-col  space-y-3 font-normal text-xl absolute left-0 bg-[#f2f2f2] h-max w-[100vw] top-[3.3rem] p-4 -z-10 lg:hidden">
+
+            <a class="fitems cursor-pointer hover:underline">Microsoft 365 </a>
+            <a class="fitems cursor-pointer hover:underline">Office </a>
+            <a class="fitems cursor-pointer hover:underline">Windows </a>
+            <a class="fitems cursor-pointer hover:underline">Surface </a>
+            <a class="fitems cursor-pointer hover:underline block md:hidden lg:block">Xbox </a>
+            <a class="fitems cursor-pointer hover:underline block md:hidden lg:block">Support </a>
+            <a class="fitems cursor-pointer hover:underline block md:hidden lg:block">Support </a>
+            <a class="fitems cursor-pointer hover:underline block md:hidden lg:block">Support </a>
+            <a class="fitems cursor-pointer hover:underline block md:hidden lg:block">Support </a>
+            <a class="fitems cursor-pointer hover:underline block md:hidden lg:block">Support </a>
+            <a class="fitems cursor-pointer hover:underline block md:hidden lg:block">Support </a>
+            <a class="fitems cursor-pointer hover:underline block md:hidden lg:block">Support </a>
+            <a class="fitems cursor-pointer hover:underline block md:hidden lg:block">Support </a>
+            <a class="fitems cursor-pointer hover:underline block md:hidden lg:block">Support </a>
+            <a class="fitems cursor-pointer hover:underline block md:hidden lg:block">Support </a>
+        </div>
         <div class="flex justify-center items-center md:hidden">
-            <div class="hamburger inline-block cursor-pointer space-y-1 mr-3">
-                <div class="line h-0.5 w-5 p-0 bg-black "></div>
-                <div class="line h-0.5 w-5 p-0 bg-black "></div>
-                <div class="line h-0.5 w-5 p-0 bg-black "></div>
-            </div>
+            <button id="bars" class="hamburger inline-block cursor-pointer mr-3 h-9 w-9"><img src="img/hamburger.svg"
+                    alt=""></button>
+            <button id="close" class="hamburger cursor-pointer mr-3 h-9 w-9 hidden"><img src="img/icons8-close-150.svg"
+                    alt=""></button>
             <a href="" class="search">
                 <img class="h-5 rotate-90" src="img/Search-Icon.svg" alt="">
             </a>
@@ -27,16 +45,16 @@
             <div href="" class="logo md:order-1">
                 <img class="h-6" src="img/logo.png" alt="">
             </div>
-            <div class="features hidden md:flex order-2 mx-5 space-x-3 font-normal text-xs my-2">
+            <div class="features hidden md:flex md:order-2 md:mx-5 md:space-x-3 md:font-normal md:text-xs md:my-2">
 
                 <a class="fitems cursor-pointer hover:underline">Microsoft 365 </a>
                 <a class="fitems cursor-pointer hover:underline">Office </a>
                 <a class="fitems cursor-pointer hover:underline">Windows </a>
                 <a class="fitems cursor-pointer hover:underline">Surface </a>
-                <a class="fitems cursor-pointer hover:underline lg:hidden">More <img class="rotate-90 inline" src="img/Arrow-black.svg" alt=""> </a>
+                <a class="fitems hidden md:inline-block cursor-pointer hover:underline lg:hidden">More <img
+                        class="rotate-90 inline" src="img/Arrow-black.svg" alt=""> </a>
                 <a class="fitems cursor-pointer hover:underline hidden lg:block">Xbox </a>
                 <a class="fitems cursor-pointer hover:underline hidden lg:block">Support </a>
-
             </div>
         </div>
         <div class="cart flex justify-around items-center md:order-3 ">
@@ -63,25 +81,27 @@
             <div class="image">
                 <img src="img/Surface pro 8.webp" alt="" class="lg:h-[50vh] w-[100vw] md:w-[50vw] md:h-[50vh]">
             </div>
-            <div class="flex justify-center items-center flex-col md:w-[50vw] py-16 space-y-2 md:items-start md:justify-start md:px-16 lg:py-6">
+            <div
+                class="flex justify-center items-center flex-col md:w-[50vw] py-16 space-y-2 md:items-start md:justify-start md:px-16 lg:py-6">
                 <button class="bg-yellow-500 font-semibold px-3 py-0.5 "> New</button>
                 <h1 class="text-2xl font-semibold">Surface Pro 8</h1>
                 <p class="text-center md:text-left">Do more with a larger 13-inch touchscreen, faster connections and
                     extra speed.
                     Now available with Windows 11.</p>
-                <button
-                    class="more bg-black text-white px-6 py-2 font-semibold flex items-center">
+                <button class="more bg-black text-white px-6 py-2 font-semibold flex items-center">
                     <span class="hover:underline mr-2"> Learn More</span>
-                   <img src="img/Arrow.svg" alt="">
+                    <img src="img/Arrow.svg" alt="">
                 </button>
             </div>
-            <div type="circle" class="flex items-center justify-center md:absolute md:mb-4 lg:top[65%] md:left-1/2 md:self-end space-x-2">
+            <div type="circle"
+                class="flex items-center justify-center md:absolute md:mb-4 lg:top[65%] md:left-1/2 md:self-end space-x-2">
                 <img src="img/circle.svg" class="h-2" alt="">
                 <img src="img/circle.svg" class="h-2" alt="">
                 <img src="img/Play_button.svg" class="h-6" alt="">
             </div>
         </div>
-        <div class="Promo px-4 items-start py-10 space-y-1 flex flex-col md:flex-row md:items-center md: justify-center">
+        <div
+            class="Promo px-4 items-start py-10 space-y-1 flex flex-col md:flex-row md:items-center md: justify-center">
             <div class="pitem md:mt-7">
                 <img class="h-5 w-5 md:h-12 md:w-12" src="img/Microsoft.png" alt="">
                 <p class="font-medium">Choose your Microsoft 365</p>
@@ -100,6 +120,24 @@
             </div>
         </div>
     </main>
+
 </body>
+
+<script>
+    let bars = document.getElementById('bars');
+    let features = document.getElementById('features');
+    let close = document.getElementById('close');
+    bars.addEventListener('click', function open() {
+        bars.style.display = 'none';
+        features.style.zIndex = 100;
+        close.style.display = 'inline-block';
+    })
+    close.addEventListener('click', function open() {
+        close.style.display = 'none';
+        features.style.zIndex = -1;
+        bars.style.display = 'inline-block';
+    })
+
+</script>
 
 </html>
