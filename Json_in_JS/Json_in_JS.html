@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Tutorial</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+</body>
+<script>
+    let obj ={
+        name: "Tanishq",
+        class: "11",
+        Roll_no: "32",
+    }
+    console.log(obj)
+    
+    let str = JSON.stringify(obj)
+    console.log(str)
+
+   let newstr = str.replace('11', '11 A')
+    console.log(newstr)
+
+    let newobj = JSON.parse(newstr)
+    console.log(newobj)
+</script>
+</html>
