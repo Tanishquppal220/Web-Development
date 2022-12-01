@@ -133,12 +133,13 @@
     let cross = document.getElementById('close');
     bars.addEventListener('click', function open() {
         bars.style.display = 'none';
-        features.style.translateX = '500px';
+        // features.style.translateX = '500px';
+        features.style.zIndex = '100';  
         cross.style.display = 'inline-block';
     })
     cross.addEventListener('click', function close() {
         cross.style.display = 'none';
-        features.style.translateX = '100px';
+        features.style.zIndex = '-100';
         bars.style.display = 'inline-block';
     })
 
