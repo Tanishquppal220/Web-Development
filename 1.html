@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<body style="margin:0px;background-color:black; color:yellow; text-align:center; height: 100vh; display: flex; flex-direction: column; justify-content: space-around; align-items: center; margin:0px;padding: 0px;">
+
+<div style="display: flex; flex-direction: column; align-items: center;">
+    <h2 style="position: absolute; top: 0; left: 50%; transform: translate(-50%, 0);">Pomodoro Timer</h2>
+<div style="position:absolute; top:50px; width:100%; display:flex; justify-content:center;">
+    <button id="startPauseButton" onclick="startPauseTimer()" style="color:black; background-color:yellow; border:none; padding:10px 20px; text-align:center; text-decoration:none; display:inline-block; font-size:16px; margin:4px 2px; cursor:pointer; border-radius:12px;">Start</button>
+    <button onclick="toggleFullScreen()" style="color:black; background-color:yellow; border:none; padding:10px 20px; text-align:center; text-decoration:none; display:inline-block; font-size:16px; margin:4px 2px; cursor:pointer; border-radius:12px;">Full Screen</button>
+    <button onclick="resetTimer()" style="color:black; background-color:yellow; border:none; padding:10px 20px; text-align:center; text-decoration:none; display:inline-block; font-size:16px; margin:4px 2px; cursor:pointer; border-radius:12px;">Reset</button>
+    <button onclick="openSettings()" style="color:black; background-color:yellow; border:none; padding:10px 20px; text-align:center; text-decoration:none; display:inline-block; font-size:16px; margin:4px 2px; cursor:pointer; border-radius:12px;">Settings</button>
+</div>
+
+<div id="settingsModal" style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4);">
+    <div style="background-color: #000000; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 30%;">
+        <label for="workTime">Work Time (minutes):</label><br>
+        <input type="number" id="workTimeInput" name="workTime" min="1" max="60" value="25"><br>
+        <label for="breakTime">Break Time (minutes):</label><br>
+        <input type="number" id="breakTimeInput" name="breakTime" min="1" max="60" value="5"><br>
+        <button onclick="saveSettings()" style="color:black; background-color:yellow; border:none; padding:10px 20px; text-align:center; text-decoration:none; display:inline-block; font-size:16px; margin:4px 2px; cursor:pointer; border-radius:12px;">Save</button>
+    </div>
+</div>
+<p id="timer" style="color:yellow;font-size: 17vw;font-family: cursive;margin-bottom:0px;margin-top: 10vh;">25:00</p>
+
+<div id="timerContainer" style="display: flex; flex-direction: column; align-items: center; font-size: 5em;">
+    <p id="phase" style="font-weight: bold; text-decoration: underline; color: yellow;margin-top: 0px;margin-bottom:0px"></p>
+</div>
+
+<script>
+let workTime = 25; // in minutes
+let breakTime = 5; // in minutes
+let isWorking = true;
+let timer;
+let time; // move time to the global scope
+
+function startPauseTimer() {
+    let button = document.getElementById('startPauseButton');
+    let phaseElement = document.getElementById('phase'); // get the phase element
+    if (timer) {
+        clearInterval(timer);
+        timer = null;
+        button.innerText = 'Start'; // change button text to 'Start'
+    } else {
+        if (!time) { // only initialize time if it's not already set
+            time = (isWorking ? workTime : breakTime) * 60; // convert minutes to seconds
+            phaseElement.innerText = isWorking ? 'Work phase' : 'Break phase'; // set the phase text
+        }
+        timer = setInterval(() => {
+            time--;
+            document.getElementById('timer').innerText = formatTime(time);
+            if (time <= 0) {
+                clearInterval(timer);
+                timer = null;
+                isWorking = !isWorking;
+                time = null; // reset time when the timer reaches 0
+                startPauseTimer();
+            }
+        }, 1000); // update every second
+        button.innerText = 'Pause'; // change button text to 'Pause'
+        document.getElementById('timer').innerText = formatTime(time); // update the timer immediately
+    }
+}
+
+function formatTime(seconds) {
+    const mm = Math.floor(seconds / 60);
+    const ss = seconds % 60;
+    return `${String(mm).padStart(2, '0')}:${String(ss).padStart(2, '0')}`;
+}
+
+function resetTimer() {
+    clearInterval(timer); // stop the timer
+    timer = null;
+    time = null; // reset the time
+    isWorking = true; // reset the phase to 'working'
+    document.getElementById('timer').innerText = formatTime(workTime * 60); // reset the timer display
+    document.getElementById('phase').innerText = 'Work phase'; // reset the phase display
+    document.getElementById('startPauseButton').innerText = 'Start'; // reset the button text
+}
+
+function openSettings() {
+    document.getElementById('settingsModal').style.display = 'block';
+}
+
+function saveSettings() {
+    workTime = document.getElementById('workTimeInput').value;
+    breakTime = document.getElementById('breakTimeInput').value;
+    document.getElementById('settingsModal').style.display = 'none';
+    resetTimer();
+}
+
+function toggleFullScreen() {
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        }
+    }
+}
+</script>
+
+</body>
+</html>
