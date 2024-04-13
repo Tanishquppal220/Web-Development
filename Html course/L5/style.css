@@ -1,0 +1,8 @@
+table{
+    /* display: flexbox; */
+    height: 25px;
+    text-align: center;
+    width:50vw;
+    padding: 20px;
+    border: 4px solid red;
+}
