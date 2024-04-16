@@ -1,31 +1,52 @@
-<!--Forms  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Google.com</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
 </head>
 <body>
-    <div class="main">
-        <div class="logo">
-            <img class="img" src="image.png" alt="Google">
-        </div>
-        <h1>Log in: </h1>
-        <form action="/submit" method="post" class="form">
-        <div class="u">
-            <label for="username">Username:</label>
-            <input type="text" id="username">
-        </div>
-        <div class="p"> 
-            <label for="password">Password:</label>
-            <input type="password" id="password">
-        </div>
-        <div class="btn">
-            <button target="__blank"type="submit">Log in</button>
-        </div>
-        </form>
     <div>
+        <form action="text.txt">
+            <p>
+                <label for="first_name">First Name:</label>
+                <input required type="text" id="first_name">
+            </p>
+            <p>
+                <label for="last_name">Last Name:</label>
+                <input required type="text" id="last_name">
+            </p>
+            <div>
+                <label for="class">Class:</label>
+                <select name="class" id="class">
+                    <option value="1">I</option>
+                    <option value="2">II</option>
+                    <option value="3">III</option>
+                    <option value="4">IV</option>
+                    <option value="5">V</option>
+                    <option value="6">VI</option>
+                    <option value="7">VII</option>
+                    <option value="8">VIII</option>
+                    <option value="9">IX</option>
+                    <option value="10">X</option>
+                </select>
+            </div>   
+            <div>
+                <label for="section">Section</label>
+                <input required type="radio" name="section" id="section" value="A">A
+                <input required type="radio" name="section" id="section" value="B">B
+                <input required type="radio" name="section" id="section" value="C">C
+                <input required type="radio" name="section" id="section" value="D">D
+            </div>
+            <div>
+                <input type="checkbox" name="" id="accept" required>
+                <label for="accept" >Accept Terms and Conditions</label>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
