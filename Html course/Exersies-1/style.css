@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.video{
+    width: fit-content;
+    height: 40vh;
+    margin: 0;
+    padding: 0;
+}
+tr{
+    margin: 0;
+    padding: 0;
+}
+td{
+    margin: 0;
+    padding: 0;
+    width: 98vw;
+    height: auto;
+    /* text-align: center;
+    align-items: center; */
+}
+video{
+    width: 32.8vw;
+    height: 50%;
+}
+.music tr td{
+    padding: 10px;
+
+}
