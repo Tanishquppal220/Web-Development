@@ -1,1 +1,1 @@
-# Tailwind-css
+# CSS Course
