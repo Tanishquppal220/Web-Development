@@ -1,0 +1,41 @@
+*{
+    /* margin: 0; */
+    padding: 0;
+    /* border: 2px solid black; */
+}
+/* element selector */
+
+div{
+    background-color: red;
+    color: white;
+    font-size: xx-large;
+}
+h1{
+    background-color: yellow;
+    color: chocolate;
+}
+/* Class selectors */
+.h2{
+    background-color: green;
+    color: white;
+}
+/* Id selectors */
+#desc{
+    background-color: blue;
+    color: white;
+    font-size: xx-large;
+}
+/* Descendant selectors */
+div p{
+    background-color: pink;
+    color: black;
+}
+/* Pseudo selector */
+p:hover{
+    background-color: black;
+    color: white;
+}
+p:first-child{
+    background-color: orange;
+    color: white;
+}
