@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <!-- 
+    GET method:
+        Sends data as part of the URL query string.
+        Data is visible in the URL.
+        Limited amount of data can be sent.
+        Can be bookmarked and cached by browsers.
+        Generally used for retrieving data from the server.
+
+    POST method:
+        Sends data in the body of the HTTP request.
+        Data is not visible in the URL.
+        Can send large amounts of data.
+        Cannot be bookmarked or cached.
+        Generally used for submitting data to the server. -->
+    <form action="https://www.google.com/search" method="get">
+        <label for="q">Search:</label>
+        <input type="text" name="q" placeholder="Search">
+        <button type="submit">Submit</button>
+    </form>
+    <a href="https://www.codewithharry.com/tutorial/html-forms/"> More info about forms:</a>
+</body>
+</html>

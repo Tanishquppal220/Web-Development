@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* elemnent selector */
+        div{
+            background-color:yellow;
+            color: red;
+            padding: 10px;
+        }
+        /* Child selector */
+        div p{
+            background-color:blue;
+            color: white;
+        }
+        /* direct child */
+        div>p{
+            font-size: xx-large;
+        }
+        /* class selector */
+        .bitalic{
+            font-weight: bold;
+            font-style: italic;
+        }
+        /* id selector */
+        #special-id{
+            background-color: gold;
+            font-size: 20px;
+        }
+        /* attribute selector */
+        [data-type="special"]{
+            background-color: cyan;
+            font-weight: bold;
+        }
+        /* pseudo-class selector */
+        p:hover{
+            background-color: green;
+        }
+        a:visited{
+            color: red;
+        }
+        a:link{
+            color: brown;
+            text-decoration: none;
+        }
+        /* nth-child pseudo-class */
+        p:nth-child(2){
+            font-size: 200px;
+        }
+        /* nth-of-type pseudo-class */
+        p:nth-of-type(2){
+            font-weight: bold;
+        }
+        /* nth-last-child pseudo-class */
+        p:nth-last-child(2){
+            color: blue;
+        }
+        /* nth-last-of-type pseudo-class */
+        p:nth-last-of-type(2){
+            font-style: italic;
+        }
+        /* nth-child and nth-last-child combined */
+    </style>
+</head>
+<body>
+
+    <div>
+        This is a div
+        <p>Hello World
+            <div>
+                list of itms: 
+                <ul>
+                    <li>This is a list item</li>
+                    <li>This is a list item</li>
+                    <li>This is a list item</li>
+                </ul>
+            </div>
+        </p>
+    </div>
+    <!--  -->
+    <p class="bitalic">
+        Hello i am italic and BOLD
+    </p>
+    <!--  -->
+    <span>List of links:</span>
+    <!--  -->
+    <ol>
+        <li>
+            <a href="index.html">Main</a>
+        </li>
+        <li>
+            <a href="index2.html">about</a>
+        </li>
+        <li>
+            <a href="index3.html">contact</a>
+        </li>
+    </ol>
+    <div id="special-id">Hello World</div>
+    <p data-type="special">Hello World</p>
+</body>
+</html>
