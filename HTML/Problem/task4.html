@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            padding: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        /* center div to cnter of screen*/
+        .center{
+            background-color: seagreen;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid black;
+            padding: 20px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="center" >
+        <h1>Login Form</h1>
+        <table>
+        <form action="mailto:tanishquppal220@gmail.com" method="get">
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="username" required placeholder="Username"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" required placeholder="Password"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="submit">
+                    <input type="reset" value="reset">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

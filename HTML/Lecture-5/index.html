@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        .r1 th{
+            background-color: blueviolet;
+        }
+        .r2 td{
+            background-color: rgb(60, 131, 159);
+        }
+        .r3 td{
+            background-color: rgba(75, 225, 105, 0.786);
+        }
+    </style>
+</head>
+<body>
+    <table border cellpadding="50" align="center">
+        <thead>
+            <tr class="r1">
+                <th>1</th>
+                <th colspan="2">2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="r2">
+                <td rowspan="2">3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr class="r3">
+                <td>6</td>
+                <td>7</td>
+            </tr>
+        </tbody>
+    </table>
+<hr>
+    
+    <table border cellpadding="50" align="center">
+        <thead>
+            <tr class="r1">
+                <th>1</th>
+                <th colspan="2">2</th>
+                <th>3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="r2">
+                <td rowspan="2">4</td>
+                <td></td>
+                <td>5</td>
+            </tr>
+            <tr class="r3">
+                <td>6</td>
+                <td>7</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>

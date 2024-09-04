@@ -1,0 +1,70 @@
+<!-- login page like google -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 100px;
+        }
+        form {
+            margin: 0 auto;
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Login Page
+    </h1>
+    <form action="/submit_login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        <input type="submit" value="Login">
+        <br><br>
+        <a href="/forgot_password">Forgot Password?</a>
+        <br><br>
+        <a href="/register">Don't have an account? Sign up</a>
+        <br><br>
+        <a href="/terms_and_conditions">Terms and Conditions</a>
+        <br><br>
+        <input type="checkbox" id="remember_me" name="remember_me">
+        <label for="remember_me">Remember Me</label>
+        <br><br>
+        <input type="checkbox" id="keep_logged_in" name="keep_logged_in">
+        <label for="keep_logged_in">Keep Me Logged In</label>
+        <br><br>
+        <a href="/two_factor_authentication">Two-Factor Authentication</a>
+        <br><br>
+    </form>
+</body>
+</html>
