@@ -8,17 +8,42 @@
 </head>
 
 <body>
-    <form action="https://www.google.com" method="GET">
+    <form action="/HTML/Lecture-1" method="GET">
         <div>
             <label for="username">Usename:</label>
-            <input type="text" id="username" placeholder="Username" required>
+            <input type="text" value="Tanishq" id="username" placeholder="Username">
         </div>
         <div>
             <label for="password">password:</label>
-            <input type="text" id="password" placeholder="password" required>
+            <input type="text" id="password" placeholder="password">
         </div>
         <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes" checked>
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+        <div>
+            <textarea name="q" rows="4" cols="50" placeholder="Enter your comment here..." autofocus></textarea>
+        </div>
+        <select name="fruits">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="cherry">Cherry</option>
+        </select>
+        <div>
             <button type="submit">Submit</button>
+        </div>
+        <div>
+            <figure>
+                <img src="image.jpg" alt="An example image">
+                <figcaption>This is an example image.</figcaption>
+            </figure>
+
         </div>
     </form>
 </body>
