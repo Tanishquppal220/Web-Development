@@ -69,21 +69,21 @@ nav ul li a{
   display: inline-flex;
 
 }
-/* .product-img{
-  background-image: url(https://source.unsplash.com/200x160/?cricket);
+.product-img1{
+  background-image: url(https://images.unsplash.com/photo-1678972726040-2f2cefc3cefa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDV8Q0R3dXdYSkFiRXd8fGVufDB8fHx8fA%3D%3D);
   width: 200px;
   height: 160px;
 }
 .product-img2{
-  background-image: url(https://source.unsplash.com/200x160/?Furniture);
+  background-image: url(https://images.unsplash.com/photo-1678972726040-2f2cefc3cefa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDV8Q0R3dXdYSkFiRXd8fGVufDB8fHx8fA%3D%3D);
   width: 200px;
   height: 160px;
 }
 .product-img3{
-  background-image: url(https://source.unsplash.com/200x160/?Mobile);
+  background-image: url(https://images.unsplash.com/photo-1678972726040-2f2cefc3cefa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDV8Q0R3dXdYSkFiRXd8fGVufDB8fHx8fA%3D%3D);
   width: 200px;
   height: 160px;
-} */
+}
 footer{
   display: flex;
   background-color: #2874f0;
