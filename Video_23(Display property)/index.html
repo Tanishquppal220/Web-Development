@@ -10,26 +10,52 @@
             margin: 0;
             padding: 0;
         }
-
-        .block {
-            display: block;
-            border: 2px solid black;
-            background-color: aquamarine;
+        .b1{
+            border: 3px solid red;
+            margin-top: 10px;
+            height: 100px;
         }
-        span{
-            display: inline;
-            border: 2px solid black;
-            background-color: blueviolet;
+        .box{
+            border: 2px solid blue;
+            margin: 2px;
+            padding: 10px;
+            /* width: 100px; */
+            display: inline-block;
+        }
+        .m-10{
+            border: 3px solid black;
+            margin-top: 10px;
+        }
+        .box1{
+            border: 2px solid green;
+            margin: 2px;
+            padding: 10px;
+            /* width: 100px; */
+            /* visibility: hidden; */
+            display: inline-block;
         }
     </style>
 </head>
 
 <body>
-    <div class="block">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic adipisci rem at eum id neque iste nemo veritatis,
-        quas ea, eveniet excepturi et magni enim fuga dignissimos quia culpa quam.
+    <div class="b1">
+        <div class="box">
+            This is box 1
+        </div>
+        <div class="box">
+            This is box 2
+        </div>
+        <span>This is inline</span>
     </div>
-    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error nulla fuga sapiente molestiae consequuntur. Minima eaque voluptas quos perspiciatis, eos assumenda dignissimos expedita, ipsum quis odio repellendus quae impedit illo.</span>
+    <div class="m-10">
+        <div class="box1">
+            This is box 1
+        </div>
+        <div class="box1">
+            This is box 2
+        </div>
+        <span>This is inline</span>
+    </div>
 </body>
 
 </html>
