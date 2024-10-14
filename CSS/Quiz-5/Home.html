@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz 5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            display: inline-block;
+            padding: 10px;
+            /* margin: 0 10px; */
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-links:hover {
+            background-color: greenyellow;
+        }
+
+
+        a:visited {
+            color: lightblue;
+        }
+
+        /* Hide all sections by default */
+        section {
+            display: none;
+            padding-left: 10px;
+            padding-top: 101px;
+            /* Adjust padding to avoid content being hidden behind the fixed header */
+        }
+
+        /* :active link whould have green background color */
+        section:target {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="nav-links"><a href="#home">Home</a></li>
+                <li class="nav-links"><a href="#about">About</a></li>
+                <li class="nav-links"><a href="#services">Services</a></li>
+                <li class="nav-links"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to our website</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        </section>
+        <section id="about">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        </section>
+        <section id="services">
+            <h1>Our Services</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        </section>
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        </section>
+    </main>
+</body>
+
+</html>
