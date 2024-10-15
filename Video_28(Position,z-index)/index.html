@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position propeties</title>
+    <style>
+        /* Transform ,filter prospective can also make a elemnt */
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            background-color: antiquewhite;
+            margin: 100px;
+            border: 2px solid blue;
+            padding: 10px;
+            height: 200vh;
+            width: 200vw;
+            position: absolute;
+        }
+        .box{
+            border: 4px solid black;
+            height: 133px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+        }
+        .box1{
+            background-color: red;
+            /* position itself to its nearest positioned ancestor */
+            /* position: absolute; */
+            /* top: -100px; */
+            /* left:50%; */
+            /* z-index: 1; */
+        }
+        .box2{
+            background-color: green;
+            /* offset itself reletive to its orignal position */
+            /* position: relative; */
+            /* top: -34px; */
+            /* left: 34px; */
+        }
+        .box3{
+            background-color: blue;
+            position:fixed;
+            bottom: 10px;
+            
+        }
+        .box4{
+            background-color: yellow;
+            position:sticky;
+            top: 200px;
+        }
+
+        </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box1 box"></div>
+        <div class="box2 box"></div>
+        <div class="box3 box"></div>
+        <div class="box4 box"></div>
+    </div>
+</body>
+</html>
