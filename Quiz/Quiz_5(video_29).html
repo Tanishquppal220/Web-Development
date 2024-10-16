@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        :root {
+            --primary-color: #131350;
+            --secondary-color: rgb(200, 193, 193);
+            --container-bg: rgb(219, 218, 218);
+            --text-color: #677485;
+            --highlight-color: #0091ff;
+            --button-bg: #40baee48;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: var(--secondary-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            z-index: 1000;
+            top: 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-link {
+            margin: 0 10px;
+            color: white;
+        }
+
+        .gym-name {
+            flex-grow: 1;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .register-button {
+            background-color: var(--highlight-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        :visited {
+            color: white;
+        }
+
+        .slider {
+            margin: 10px;
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+        }
+
+        .container {
+            margin: 10px;
+            padding: 10px;
+            background-color: var(--container-bg);
+            height: 28em;
+            width: 20em;
+            border-radius: 23px;
+        }
+
+        .pic {
+            margin-bottom: 10px;
+            height: 50%;
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        .list-item {
+            padding: 4px;
+            font-size: 10px;
+            display: inline-block;
+            color: rgb(125, 116, 116);
+            border: 0.5px solid grey;
+            border-radius: 8px;
+        }
+
+        .title {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: var(--primary-color);
+            margin: 10px;
+        }
+
+        p {
+            color: var(--text-color);
+            margin: 10px;
+        }
+
+        .read {
+            padding: 15px;
+            border: 2px;
+            border-radius: 24px;
+            background-color: var(--button-bg);
+            color: var(--highlight-color);
+            position: relative;
+            font-weight: bold;
+            left: 35%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-link"><a href="">Home</a></li>
+                <li class="nav-link"><a href="">About</a></li>
+                <li class="nav-link"><a href="">Class</a></li>
+                <li class="nav-link"><a href="">Contact</a></li>
+            </ul>
+            <div class="gym-name">Gym Name</div>
+            <button class="register-button">Register</button>
+        </nav>
+    </header>
+    <div class="slider">
+        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    </div>
+    <div class="row">
+        <div class="container">
+            <img src="image.png" alt="" class="pic">
+            <div class="tags">
+                <a href=""><button class="list-item">Nature</button></a>
+                <a href=""><button class="list-item">Lake</button></a>
+            </div>
+            <div class="title">Lago di Braies</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat adipisci voluptas, ullam similique animi
+                provident porro voluptatem natus.</p>
+        </div>
+        <div class="container">
+            <img src="https://images.unsplash.com/photo-1649068618811-9f3547ef98fc?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="pic">
+            <div class="tags">
+                <a href=""><button class="list-item">Fitness</button></a>
+                <a href=""><button class="list-item">Equipment</button></a>
+            </div>
+            <div class="title">World Class Equipment</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat adipisci voluptas, ullam similique animi
+                provident porro voluptatem natus.</p>
+        </div>
+        <div class="container">
+            <img src="image.png" alt="" class="pic">
+            <div class="tags">
+                <a href=""><button class="list-item">Nature</button></a>
+                <a href=""><button class="list-item">Lake</button></a>
+            </div>
+            <div class="title">Lago di Braies</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat adipisci voluptas, ullam similique animi
+                provident porro voluptatem natus.</p>
+        </div>
+        <div class="container">
+            <img src="image.png" alt="" class="pic">
+            <div class="tags">
+                <a href=""><button class="list-item">Nature</button></a>
+                <a href=""><button class="list-item">Lake</button></a>
+            </div>
+            <div class="title">Lago di Braies</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat adipisci voluptas, ullam similique animi
+                provident porro voluptatem natus.</p>
+        </div>
+    </div>
+</body>
+
+</html>
