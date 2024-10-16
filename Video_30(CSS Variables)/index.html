@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variables</title>
+    <style>
+        :root{
+            --color:blue;
+            --seccolor:rgb(169, 169, 232);
+            --text-color: yellow;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+        .navbar{
+            background-color:var(--color);
+        }
+        a{
+            color: var(--text-color, red); /* if text-color is not defined then it will take red color */
+            
+        }
+        ul{
+            display: flex;
+            /* justify-content: center; */
+            padding: 10px;
+        }
+        ul li{
+            padding: 10px;
+            list-style: none;
+        }
+        .content{
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>My Webpage</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h2>Welcome to My Webpage</h2>
+        <p>This is a sample website. <span class="highlight">Feel free to explore</span> its content.</p>
+    </div>
+</body>
+</html>
