@@ -1,14 +1,11 @@
  /* CSS Reset */
 body {
-    font-family: 'Baloo Bhai', cursive;
+    /* font-family: 'Baloo Bhai', cursive; */
     color:white;
     margin: 0px;
     padding: 0px;
     background: url('Gym_2.jpg') no-repeat;
-    background-size: 1463px 842px;
-}
-.container{
-    display: flexbox;
+    background-size: 100vw 100vh;
 }
 
 .left {
@@ -70,7 +67,7 @@ body {
 }
 
 .btn {
-    font-family: 'Baloo Bhai', cursive;
+    /* font-family: 'Baloo Bhai', cursive; */
     margin: 0px 9px;
     background-color: black;
     color: dodgerblue;
@@ -87,14 +84,15 @@ body {
 
 .container {
     border: 2px solid white;
-    margin: 106px 80px;
-    padding: 75px;
-    width: 33%;
+    margin-top: 106px; 
+    margin-left: 80px;
+    padding: 65px 70px 0px 65px;
+    width: fit-content;
     border-radius: 28px;
 }
 
 .form-group input {
-    font-family: 'Baloo Bhai', cursive;
+    /* font-family: 'Baloo Bhai', cursive; */
     text-align: center;
     display: block;
     width: 508px;
@@ -116,7 +114,7 @@ body {
     margin: 20px auto;
 }
 .btnsubmit{
-    font-family: 'Baloo Bhai', cursive;
+    /* font-family: 'Baloo Bhai', cursive; */
     margin: 0px 9px;
     background-color: black;
     color: wheat;
