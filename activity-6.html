@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        /* tab is a 2x2 grid */
+        .tab {
+            display: grid;
+            grid-template-columns: 1fr 8fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 10px;
+            height: 75vh;
+        }
+        /* give color to each class */
+        /* logo size 1/3 frac */
+        .logo {
+            background-color: red;
+        }
+        .header {
+            background-color: blue;
+        }
+        .nav {
+            background-color: green;
+        }
+        .content {
+            text-align: center;
+            background-color: orange;
+        }
+        .footer {
+            background-color: purple;
+        }
+        /* header is a 3x1 grid */
+        .header {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        /* header row 1 is 1x1 grid */
+        .row1 {
+            background-color: pink;
+        }
+        /* header row 2 is 1x1 grid */
+        .row2 {
+            background-color: brown;
+        }
+        /* table2 */
+        .table2 {
+            display: grid;
+            grid-template-rows: 3fr 1fr;
+            grid-gap: 10px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <div class="logo">Logo</div>
+        <div class="header">
+            <div class="row1"></div>
+            <div class="row2"></div>
+            <div class="row3"></div>
+
+        </div>
+        <div class="nav">Navigation</div>
+        <div class="table2">
+            <div class="content"> Content</div>
+            <div class="footer">footer</div>
+        </div>
+    </div>
+
+</body>
+</html>

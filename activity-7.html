@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* contatainer is grid of 1x5 */
+        /* continer is center of screen and has height width */
+        .container{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                "image_box"
+                "name_box"
+                "description"
+                "contact"
+                "social";
+            height: fit-content;
+            /* width: 50vw; */
+            /* margin: auto; */
+            border: 2px solid black;
+        }
+        .size{
+            margin: auto;
+            height:95%;
+            width: 80%;
+        }
+        /* image box bg-green,image inside it should be circle image */
+        .image_box{
+            grid-area: image_box;
+            background-color: green;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        .image_box img{
+            border-radius: 100px;
+            height: 90px;
+            width: 90px;
+        }
+        /* name box  color blue*/
+        .name_box{
+            padding: 10px;
+            grid-area: name_box;
+            background-color: blue;
+            color: white;
+            height: fit-content;
+        }
+        .name_box span{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="size image_box">
+            <img width="100" height="100" src="image.png" alt="">
+        </div>
+        <div class="size name_box">
+            <h1>John Doe</h1>
+            <p><span>Web dveloper</span> at <span>Tech solution</span></p>
+        </div>
+        <div class="size description">
+            Passionate about creating innovative web solutions.that enhance the user experience and functionality. exprienced in HTML, CSS, JavaScript, andresponsive design.
+        </div>
+        <div class="size contact">
+            <p><span>Email:</span>Example@Example.com</p>
+            <p><span>Phone:</span>123-456-7890</p>
+        </div>
+        <div class="size social">
+            <span><a href="">LinkdIn</a></span>
+            <span><a href="">Twitter</a></span>
+        </div>
+    </div>
+</body>
+</html>
